@@ -1,0 +1,233 @@
+body{
+background-color: black;
+color: aqua;
+
+}
+/* Animation for sliding from left on page reload */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to your elements */
+.animate-slide-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.head1{
+    color: aqua;
+    position: relative;
+    left: 600px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.P1{ 
+    color: aqua;
+    position: relative;
+    left: 570px;
+    bottom:30px ;
+    font-size: 15px;
+    font-weight: bolder;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+  left: 600px;
+  bottom: 30px;
+    transition: transform 0.3s ease; 
+     box-shadow: 5px 5px 10px 5px aqua;
+}
+img:hover{
+     transform: scale(1.09);
+}
+.card1{
+    border: 1px solid black;
+    height: 330px;
+    width: 300px;
+    position: relative;
+    top: 10PX;
+    left: 100PX;
+    border-color:aqua;
+      box-shadow: 5px 5px 10px #888888;
+    border-radius: 15PX;
+  transition: transform 0.3s ease; 
+}
+.card1:hover{
+    transform: scale(1.09);
+}
+.head2{
+     color: aqua;
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.P2{
+    color: aqua;
+    position: relative;
+    left: 10px;
+    top:20px ;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.card2{
+    border: 1px solid black;
+    height: 330px;
+    width: 300px;
+    position: relative;
+    bottom: 320PX;
+    left: 500PX;
+    border-color:aqua;
+    box-shadow: 5px 5px 10px #888888;
+    border-radius: 15PX;
+  transition: transform 0.3s ease; 
+}
+.card2:hover{
+    transform: scale(1.09);
+}
+.head3{
+  color: aqua;
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.p3{
+    position: relative;
+    left: 20PX;
+}
+.card3{
+    border: 1px solid black;
+    height: 330px;
+    width: 300px;
+    position: relative;
+    bottom: 650PX;
+    left: 900PX;
+    border-color:aqua;
+    box-shadow: 5px 5px 10px #888888;
+    border-radius: 15PX;
+  transition: transform 0.3s ease;
+  overflow: auto; 
+}
+.card3::-webkit-scrollbar{
+    display: none;
+}
+.card3:hover{
+    transform: scale(1.09);
+}
+.head4{
+  color: aqua;
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.p4{
+  position: relative;
+  left: 20PX;
+}
+.card4{
+     border: 1px solid black;
+    height: 330px;
+    width: 300px;
+    position: relative;
+    bottom: 600PX;
+    left: 100PX;
+    border-color:aqua;
+    box-shadow: 5px 5px 10px #888888;
+    border-radius: 15PX;
+  transition: transform 0.3s ease;
+}
+.card4:hover{
+     transform: scale(1.09);
+}
+.head5{
+  color: aqua;
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bolder;  
+}
+.p5{
+    position: relative;
+  left: 20PX;
+}
+.card6{
+     border: 1px solid black;
+    height: 330px;
+    width: 300px;
+    position: relative;
+    bottom: 930PX;
+    left: 500PX;
+    border-color:aqua;
+    box-shadow: 5px 5px 10px #888888;
+    border-radius: 15PX;
+  transition: transform 0.3s ease;
+}
+.card6:hover{
+    transform: scale(1.09);
+}
+a{
+ position: relative;
+  left: 20PX;
+  color: aqua;
+  text-decoration: none;   
+}
+@media (max-width: 600px) {
+
+  body {
+    text-align: center;
+  }
+
+  .head1 {
+    left: 0;
+    font-size: 28px;
+  }
+
+  .P1 {
+    left: 0;
+    bottom: 5px;
+    font-size: 13px;
+  }
+
+  img {
+    left: 0;
+    height: 140px;
+    width: 140px;
+    bottom: 0;
+  }
+
+  /* Cards stacked in one column */
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card6 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    bottom: 0;
+    top: 0;
+  }
+
+  /* Fix text inside cards */
+  .head2, .head3, .head4, .head5 {
+    left: 10px;
+    font-size: 18px;
+  }
+
+  .P2, .p3, .p4, .p5 {
+    left: 10px;
+    font-size: 14px;
+  }
+}
